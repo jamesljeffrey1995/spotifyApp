@@ -17,5 +17,7 @@ database = getenv('DATABASE')
 #app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://" + user + ':' + password + '@' + ip + '/' + database
 #db = SQLAlchemy(app)
 app.config['SECRET_KEY'] = getenv('MY_SECRET_KEY')
-
+SPOTIPY_CLIENT_ID = getenv('SPOTIPY_CLIENT_ID')
+SPOTIPY_CLIENT_SECRET = getenv('SPOTIPY_CLIENT_SECRET')
+SPOTIPY_REDIRECT_URI = getenv('redirect')
 from application import routes
